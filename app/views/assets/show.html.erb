@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codneg:</strong>
+  <%= @asset.codneg %>
+</p>
+
+<p>
+  <strong>Nomres:</strong>
+  <%= @asset.nomres %>
+</p>
+
+<p>
+  <strong>Quatot:</strong>
+  <%= @asset.quatot %>
+</p>
+
+<p>
+  <strong>Voltot:</strong>
+  <%= @asset.voltot %>
+</p>
+
+<p>
+  <strong>Expret:</strong>
+  <%= @asset.expret %>
+</p>
+
+<p>
+  <strong>Risk:</strong>
+  <%= @asset.risk %>
+</p>
+
+<p>
+  <strong>Historical quotations:</strong>
+  <%= @asset.historical_quotations %>
+</p>
+
+<%= link_to 'Edit', edit_asset_path(@asset) %> |
+<%= link_to 'Back', assets_path %>

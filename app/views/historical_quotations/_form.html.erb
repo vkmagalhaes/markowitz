@@ -1,0 +1,117 @@
+<%= form_for(@historical_quotation) do |f| %>
+  <% if @historical_quotation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@historical_quotation.errors.count, "error") %> prohibited this historical_quotation from being saved:</h2>
+
+      <ul>
+      <% @historical_quotation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cry_date %><br>
+    <%= f.date_select :cry_date %>
+  </div>
+  <div class="field">
+    <%= f.label :codbdi %><br>
+    <%= f.text_field :codbdi %>
+  </div>
+  <div class="field">
+    <%= f.label :codneg %><br>
+    <%= f.text_field :codneg %>
+  </div>
+  <div class="field">
+    <%= f.label :tpmerc %><br>
+    <%= f.number_field :tpmerc %>
+  </div>
+  <div class="field">
+    <%= f.label :nomres %><br>
+    <%= f.text_field :nomres %>
+  </div>
+  <div class="field">
+    <%= f.label :especi %><br>
+    <%= f.text_field :especi %>
+  </div>
+  <div class="field">
+    <%= f.label :prazot %><br>
+    <%= f.text_field :prazot %>
+  </div>
+  <div class="field">
+    <%= f.label :modref %><br>
+    <%= f.text_field :modref %>
+  </div>
+  <div class="field">
+    <%= f.label :preabe %><br>
+    <%= f.number_field :preabe %>
+  </div>
+  <div class="field">
+    <%= f.label :premax %><br>
+    <%= f.number_field :premax %>
+  </div>
+  <div class="field">
+    <%= f.label :premin %><br>
+    <%= f.number_field :premin %>
+  </div>
+  <div class="field">
+    <%= f.label :premed %><br>
+    <%= f.number_field :premed %>
+  </div>
+  <div class="field">
+    <%= f.label :preult %><br>
+    <%= f.number_field :preult %>
+  </div>
+  <div class="field">
+    <%= f.label :preofc %><br>
+    <%= f.number_field :preofc %>
+  </div>
+  <div class="field">
+    <%= f.label :preofv %><br>
+    <%= f.number_field :preofv %>
+  </div>
+  <div class="field">
+    <%= f.label :totneg %><br>
+    <%= f.number_field :totneg %>
+  </div>
+  <div class="field">
+    <%= f.label :quatot %><br>
+    <%= f.number_field :quatot %>
+  </div>
+  <div class="field">
+    <%= f.label :voltot %><br>
+    <%= f.number_field :voltot %>
+  </div>
+  <div class="field">
+    <%= f.label :preexe %><br>
+    <%= f.number_field :preexe %>
+  </div>
+  <div class="field">
+    <%= f.label :indopc %><br>
+    <%= f.number_field :indopc %>
+  </div>
+  <div class="field">
+    <%= f.label :datven %><br>
+    <%= f.date_select :datven %>
+  </div>
+  <div class="field">
+    <%= f.label :fatcot %><br>
+    <%= f.number_field :fatcot %>
+  </div>
+  <div class="field">
+    <%= f.label :ptoexe %><br>
+    <%= f.number_field :ptoexe %>
+  </div>
+  <div class="field">
+    <%= f.label :codisi %><br>
+    <%= f.text_field :codisi %>
+  </div>
+  <div class="field">
+    <%= f.label :dismes %><br>
+    <%= f.number_field :dismes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

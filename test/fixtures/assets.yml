@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codneg: MyString
+  nomres: MyString
+  quatot: 1
+  voltot: 1
+  expret: 1
+  risk: 1.5
+  historical_quotations_id: 
+
+two:
+  codneg: MyString
+  nomres: MyString
+  quatot: 1
+  voltot: 1
+  expret: 1
+  risk: 1.5
+  historical_quotations_id: 

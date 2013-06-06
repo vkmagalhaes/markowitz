@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cry_date: 2013-06-01
+  codbdi: MyString
+  codneg: MyString
+  tpmerc: 1
+  nomres: MyString
+  especi: MyString
+  prazot: MyString
+  modref: MyString
+  preabe: 1
+  premax: 1
+  premin: 1
+  premed: 1
+  preult: 1
+  preofc: 1
+  preofv: 1
+  totneg: 1
+  quatot: 1
+  voltot: 1
+  preexe: 1
+  indopc: 1
+  datven: 2013-06-01
+  fatcot: 1
+  ptoexe: 1
+  codisi: MyString
+  dismes: 1
+
+two:
+  cry_date: 2013-06-01
+  codbdi: MyString
+  codneg: MyString
+  tpmerc: 1
+  nomres: MyString
+  especi: MyString
+  prazot: MyString
+  modref: MyString
+  preabe: 1
+  premax: 1
+  premin: 1
+  premed: 1
+  preult: 1
+  preofc: 1
+  preofv: 1
+  totneg: 1
+  quatot: 1
+  voltot: 1
+  preexe: 1
+  indopc: 1
+  datven: 2013-06-01
+  fatcot: 1
+  ptoexe: 1
+  codisi: MyString
+  dismes: 1

@@ -1,0 +1,41 @@
+<h1>Listing assets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Codneg</th>
+      <th>Nomres</th>
+      <th>Quatot</th>
+      <th>Voltot</th>
+      <th>Expret</th>
+      <th>Risk</th>
+      <th>Historical quotations</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @assets.each do |asset| %>
+      <tr>
+        <td><%= asset.codneg %></td>
+        <td><%= asset.nomres %></td>
+        <td><%= asset.quatot %></td>
+        <td><%= asset.voltot %></td>
+        <td><%= asset.expret %></td>
+        <td><%= asset.risk %></td>
+        <td><%= asset.historical_quotations.count %></td>
+        <td><%= link_to 'Show', asset %></td>
+        <td><%#= link_to 'Edit', edit_asset_path(asset) %></td>
+        <td><%#= link_to 'Destroy', asset, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= paginate @assets %>
+
+<%= link_to 'New Asset', new_asset_path %>

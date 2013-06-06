@@ -1,0 +1,1 @@
+json.extract! @historical_quotation, :cry_date, :codbdi, :codneg, :tpmerc, :nomres, :especi, :prazot, :modref, :preabe, :premax, :premin, :premed, :preult, :preofc, :preofv, :totneg, :quatot, :voltot, :preexe, :indopc, :datven, :fatcot, :ptoexe, :codisi, :dismes, :created_at, :updated_at

@@ -1,0 +1,77 @@
+<h1>Listing historical_quotations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cry date</th>
+      <th>Codbdi</th>
+      <th>Codneg</th>
+      <th>Tpmerc</th>
+      <th>Nomres</th>
+      <th>Especi</th>
+      <th>Prazot</th>
+      <th>Modref</th>
+      <th>Preabe</th>
+      <th>Premax</th>
+      <th>Premin</th>
+      <th>Premed</th>
+      <th>Preult</th>
+      <th>Preofc</th>
+      <th>Preofv</th>
+      <th>Totneg</th>
+      <th>Quatot</th>
+      <th>Voltot</th>
+      <th>Preexe</th>
+      <th>Indopc</th>
+      <th>Datven</th>
+      <th>Fatcot</th>
+      <th>Ptoexe</th>
+      <th>Codisi</th>
+      <th>Dismes</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @historical_quotations.each do |historical_quotation| %>
+      <tr>
+        <td><%= historical_quotation.cry_date %></td>
+        <td><%= historical_quotation.codbdi %></td>
+        <td><%= historical_quotation.codneg %></td>
+        <td><%= historical_quotation.tpmerc %></td>
+        <td><%= historical_quotation.nomres %></td>
+        <td><%= historical_quotation.especi %></td>
+        <td><%= historical_quotation.prazot %></td>
+        <td><%= historical_quotation.modref %></td>
+        <td><%= historical_quotation.preabe %></td>
+        <td><%= historical_quotation.premax %></td>
+        <td><%= historical_quotation.premin %></td>
+        <td><%= historical_quotation.premed %></td>
+        <td><%= historical_quotation.preult %></td>
+        <td><%= historical_quotation.preofc %></td>
+        <td><%= historical_quotation.preofv %></td>
+        <td><%= historical_quotation.totneg %></td>
+        <td><%= historical_quotation.quatot %></td>
+        <td><%= historical_quotation.voltot %></td>
+        <td><%= historical_quotation.preexe %></td>
+        <td><%= historical_quotation.indopc %></td>
+        <td><%= historical_quotation.datven %></td>
+        <td><%= historical_quotation.fatcot %></td>
+        <td><%= historical_quotation.ptoexe %></td>
+        <td><%= historical_quotation.codisi %></td>
+        <td><%= historical_quotation.dismes %></td>
+        <td><%= link_to 'Show', historical_quotation %></td>
+        <td><%#= link_to 'Edit', edit_historical_quotation_path(historical_quotation) %></td>
+        <td><%#= link_to 'Destroy', historical_quotation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= paginate @historical_quotations %>
+
+<%= link_to 'New Historical quotation', new_historical_quotation_path %>
