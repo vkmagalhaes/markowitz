@@ -8,11 +8,11 @@ namespace :historical_quotations do
     print "Calculando risco e valor esperado dos ativos - " + count.to_s + " | " + total.to_s
     Asset.all.each do |asset|
       # calculate expected return
-      asset.expret = asset.historical_quotations.average(:premed).to_i
+      asset.expret = asset.historical_quotations.average(:return_rate)
       # calculate risk
       result = ActiveRecord::Base.connection.execute(
-                HistoricalQuotation.where(asset_id: asset.id).select('VARIANCE(premed)').to_sql).to_a
-      asset.risk = result.first["variance"].to_f
+                HistoricalQuotation.where(asset_id: asset.id).select('VARIANCE(return_rate)').to_sql).to_a
+      asset.risk = result.first["variance"].nil? ? 0 : result.first["variance"].to_d
       asset.save!
 
       count = count + 1
